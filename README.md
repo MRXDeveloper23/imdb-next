@@ -1,5 +1,9 @@
 # Imdb clone - nextjs project
 
+## File and folder structure
+
+Check out this link: [https://app.eraser.io/workspace/juZs2lJcEr2P0P19pq20?origin=share](https://app.eraser.io/)
+
 ## Getting Started
 
 First, run the development server:
