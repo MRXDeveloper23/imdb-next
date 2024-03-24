@@ -31,7 +31,7 @@ const MovieCard = ({ movie }: Props) => {
           className="sm:rounded-t-lg group-hover:opacity-55 transition-opacity duration-300"
         />
         <div className="p-2">
-          <p className="line-clamp-2 font-medium">{movie.overview}</p>
+          <p className="line-clamp-2 font-medium my-2">{movie.overview}</p>
           <h2 className="text-lg font-bold truncate">
             {movie.title || movie.name}
           </h2>
