@@ -1,17 +1,25 @@
 import React from "react";
+import MovieCard from "./MovieCard";
 
 type Props = {
   movies: {
     id: string;
-    original_title: string;
+    backdrop_path?: string;
+    poster_path?: string;
+    overview: string;
+    title?: string;
+    name?: string;
+    release_date?: string;
+    first_air_date?: string;
+    vote_count: number;
   }[];
 };
 
 const Movies = ({ movies }: Props) => {
   return (
-    <div>
+    <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 max-w-6xl mx-auto p-3 gap-4">
       {movies.map((movie) => (
-        <div key={movie.id}>{movie.original_title}</div>
+        <MovieCard key={movie.id} movie={movie} />
       ))}
     </div>
   );
