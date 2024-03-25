@@ -25,10 +25,12 @@ const MovieCard = ({ movie }: Props) => {
           src={`https://image.tmdb.org/t/p/original/${
             movie.backdrop_path || movie.poster_path
           }`}
-          alt="movie"
+          alt="image is not available"
+          placeholder="blur"
+          blurDataURL="/spinner.svg"
           width={500}
           height={300}
-          className="sm:rounded-t-lg group-hover:opacity-55 transition-opacity duration-300"
+          className="object-cover sm:h-[150px] max-w-full h-auto sm:rounded-t-lg group-hover:opacity-55 transition-opacity duration-300"
         />
         <div className="p-2">
           <p className="line-clamp-2 font-medium my-2">{movie.overview}</p>

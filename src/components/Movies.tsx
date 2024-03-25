@@ -17,7 +17,7 @@ type Props = {
 
 const Movies = ({ movies }: Props) => {
   return (
-    <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 max-w-6xl mx-auto p-3 gap-4">
+    <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 max-w-6xl mx-auto p-3 gap-4">
       {movies.map((movie) => (
         <MovieCard key={movie.id} movie={movie} />
       ))}
