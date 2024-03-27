@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   title: "Imdb next",
   description: "movies search engine",
   keywords: "imdb, movies, movie database",
+  manifest: "/manifest.json",
+  icons: {
+    apple: "/imdb.png",
+  },
 };
 
 export default function RootLayout({
